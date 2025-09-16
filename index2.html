@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Your Fitness Goals</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Set Your Fitness Goals</h1>
+        <p>Define your journey to achieve your dreams!</p>
+    </div>
+    <div class="container">
+        <h2>Fitness Goals Form</h2>
+        <form action="/submit-goals" method="POST">
+            <div class="form-group">
+                <label for="goal">Primary Fitness Goal:</label>
+                <select id="goal" name="goal" required>
+                    <option value="">--Select your goal--</option>
+                    <option value="weight_loss">Weight Loss</option>
+                    <option value="muscle_gain">Muscle Gain</option>
+                    <option value="improved_endurance">Improved Endurance</option>
+                    <option value="flexibility">Flexibility</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="target">Target Metric (e.g., weight in kg, reps, or distance):</label>
+                <input type="text" id="target" name="target" placeholder="Enter your target" required>
+            </div>
+            <div class="form-group">
+                <label for="timeframe">Time Frame (e.g., weeks, months):</label>
+                <input type="text" id="timeframe" name="timeframe" placeholder="Enter your time frame" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Set Goals">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

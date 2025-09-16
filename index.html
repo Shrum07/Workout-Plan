@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Personalized Workout Planner</title>
+   <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+   <header>
+      <div class="header">
+         <h1>Elev8strength -- start your fitness journey today!</h1>
+      </div>
+   </header>
+   <main class="main_part">
+      <div class="sample_text">
+         <div class="text text_1">
+            Welcome to Your Fitness Journey!
+         </div>
+         <div class="subtext">
+            <div class="text text_2">
+               Take the first step towards transforming your life. Whether you're striving to shed those extra kilos,
+               build
+               strength, or simply feel healthier, your journey begins here. With our Personalized Workout Planner, we
+               bring
+               you
+               the tools to set achievable goals, track progress, and stay motivated every step of the way. Together,
+               let's
+               turn
+               your aspirations into reality.
+            </div>
+            <div class="fitman">
+               <img src="img_fit_man.jpg" alt="fitman">
+            </div>
+         </div>
+      </div>
+      <div class="container" id="register-form">
+         <h2>REGISTER</h2>
+         <form action="/register" method="POST">
+            <div class="form-group">
+               <label for="name">Full Name:</label>
+               <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+               <label for="email">Email Address:</label>
+               <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+               <label for="password">Password:</label>
+               <input type="password" id="password" name="password" placeholder="Create a password" required>
+            </div>
+            <div class="form-group form-g">
+               <input type="submit" value="Sign Up">
+            </div>
+            <div class="logintext">
+               <span>
+                  Already Have an Account?
+               </span>
+               <span>
+                  <a href="#" onclick="showForm('login-form')">LOGIN</a>
+               </span>
+            </div>
+         </form>
+      </div>
+      <div class="container active" id="login-form">
+         <h2>LOGIN</h2>
+         <form action="/register" method="POST">
+            <div class="form-group">
+               <label for="name">Full Name:</label>
+               <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+               <label for="email">Email Address:</label>
+               <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+               <label for="password">Password:</label>
+               <input type="password" id="password" name="password" placeholder="Enter Your password" required>
+            </div>
+            <div class="form-group form-g">
+               <input type="submit" value="Sign IN">
+            </div>
+            <div class="logintext">
+               <span>
+                  Don't Have an Account?
+               </span>
+               <span>
+                  <a href="#" onclick="showForm('register-form')">REGISTER</a>
+               </span>
+            </div>
+         </form>
+      </div>
+   </main>
+   <script src="script.js"></script>
+</body>
+
+</html>
